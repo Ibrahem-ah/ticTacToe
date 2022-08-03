@@ -347,7 +347,7 @@ function AIBetterPlay() {
     (button[2].textContent == '' &&
       button[5].textContent == '' &&
       button[8].textContent == 'O')
-  ) {
+  ) { 
     if (button[2].textContent == '') {
       button[2].innerHTML = 'O';
     } else if (button[5].textContent == '') {

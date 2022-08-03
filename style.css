@@ -40,6 +40,8 @@ td {
 
 /* CSS */
 .button-19 {
+  /* font-size: 1rem; */
+
   appearance: button;
   background-color: #1899d6;
   border: solid transparent;
@@ -50,7 +52,6 @@ td {
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
-  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 20px;
@@ -67,7 +68,6 @@ td {
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 17%;
 }
 
 .button-19:after {
@@ -98,3 +98,9 @@ td {
 .button-19:disabled {
   cursor: auto;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .button-19{
+    margin-top: 100px;
+  }
+} */

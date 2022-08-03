@@ -396,7 +396,13 @@ function AIBetterPlay() {
       button[6].innerHTML = 'O';
     }
   } else {
-    return true;
+    for (let i = 0; i < 9; i++) {
+      if (button[i].textContent == '') {
+        button[i].innerHTML = 'O';
+        break;
+      }
+    }
+ 
   }
 }
 

@@ -332,7 +332,7 @@ function AIBetterPlay() {
   ) {
     if (button[1].textContent == '' && button[7].textContent == '') {
       if (button[0].textContent == '' && button[2].textContent == '') {
-        button[0].textContent = 'O';
+        button[1].textContent = 'O';
       } else if (button[6].textContent == '' && button[8].textContent == '') {
         button[7].textContent = 'O';
       }

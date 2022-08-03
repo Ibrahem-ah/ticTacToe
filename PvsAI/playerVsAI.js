@@ -94,7 +94,7 @@ function AIturn() {
   if (ifAIwins()) {
     if (!button[4].textContent) {
       button[4].innerHTML = 'O';
-    } else if (button[4].textContent =='X' && button[2].textContent == '') {
+    } else if (button[4].textContent == 'X' && button[2].textContent == '') {
       button[2].innerHTML = 'O';
     } else if (
       (button[0].textContent == 'X' &&
@@ -330,12 +330,12 @@ function AIBetterPlay() {
       button[4].textContent == '' &&
       button[7].textContent == 'O')
   ) {
-    if (button[1].textContent == '') {
-      button[1].innerHTML = 'O';
-    } else if (button[4].textContent == '') {
-      button[4].innerHTML = 'O';
-    } else {
-      button[7].innerHTML = 'O';
+    if (button[1].textContent == '' && button[7].textContent == '') {
+      if (button[0].textContent == '' && button[2].textContent == '') {
+        button[0].textContent = 'O';
+      } else if (button[6].textContent == '' && button[8].textContent == '') {
+        button[7].textContent = 'O';
+      }
     }
   } else if (
     (button[2].textContent == 'O' &&
